@@ -4,7 +4,7 @@ local config = wezterm.config_builder()
 -- The filled in variant of the < symbol
 local SOLID_LEFT_ARROW = wezterm.nerdfonts.cod_file
 
-config.window_decorations = "INTEGRATED_BUTTONS"
+config.window_decorations = "TITLE | RESIZE"
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = true
 config.tab_bar_at_bottom = true
@@ -65,8 +65,7 @@ config.window_padding = {
 }
 config.window_close_confirmation = 'NeverPrompt'
 
-config.colors = require("colors")
-config.window_background_opacity = 0.15
+config.colors = require('colors')
 config.background = {
   {
     source = {
@@ -76,7 +75,7 @@ config.background = {
     vertical_align = "Middle",
     horizontal_align = "Center",
     attachment = "Fixed",
-    opacity = 0.4
+    opacity = 0.85
   }
 }
 -- config.background = { { source = { Color = "black" } } }
