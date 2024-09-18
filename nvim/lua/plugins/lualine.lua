@@ -42,7 +42,7 @@ return {
         lualine_y = {
           {
             "location",
-            color = { fg = colors.cyan, bg = colors.none },
+            color = { fg = colors.cyan, bg = colors.background },
           },
         },
         lualine_z = {},
