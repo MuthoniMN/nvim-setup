@@ -66,22 +66,23 @@ config.window_padding = {
 config.window_close_confirmation = 'NeverPrompt'
 
 config.colors = require('colors')
-config.background = {
-  {
-    source = {
-      File = wezterm.config_dir .. "/backdrops/background.jpg",
-    },
-    repeat_x = "NoRepeat",
-    vertical_align = "Middle",
-    horizontal_align = "Center",
-    attachment = "Fixed",
-    opacity = 0.85
-  }
-}
--- config.background = { { source = { Color = "black" } } }
---config.window_background_gradient = {
-  --colors = { '#dd77a4', '#273dd4' },
-  -- Specifices a Linear gradient starting in the top left corner.
-  --orientation = { Linear = { angle = -45.0 } },
+-- config.background = {
+  --{
+   -- source = {
+     -- File = wezterm.config_dir .. "/backdrops/background.jpg",
+   -- },
+    -- repeat_x = "NoRepeat",
+    -- vertical_align = "Middle",
+    -- horizontal_align = "Center",
+    --attachment = "Fixed",
+   -- opacity = 0.6
+ -- }
 --}
+--config.background = { { source = { Color = "black" } } }
+config.window_background_gradient = {
+  colors = { '#740920', '#2727ff', '#440120' },
+  -- Specifices a Linear gradient starting in the top left corner.
+  orientation = { Radial = { angle = -45.0 } },
+}
+config.window_background_opacity = 0.5
 return config
